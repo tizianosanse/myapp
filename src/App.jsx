@@ -1,6 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import ButtonGroup from "./components/Button.Group";
+import ImagesGroup from "./components/ImagesGroup";
+import img from "../src/12364849-Planet-Earth-and-human-eye-Stock-Photo.jpg";
 function App() {
   return (
     <div className="App">
@@ -17,6 +19,8 @@ function App() {
         >
           Learn React
         </a>
+        <ButtonGroup className="first-group" />
+        <ImagesGroup src={img} alt="image" className="img" />
       </header>
     </div>
   );
